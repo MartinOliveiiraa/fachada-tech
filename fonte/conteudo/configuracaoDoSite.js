@@ -18,11 +18,11 @@ export const configuracaoDoSite = {
   ],
 
   abertura: {
-    selo: 'Conservação de fachadas · ACM + LED',
-    titulo: 'Precisão na limpeza.',
-    destaque: 'Presença na fachada.',
+    selo: 'Limpeza e revitalização de fachadas',
+    titulo: 'Sua fachada comunica.',
+    destaque: 'Faça ela transmitir cuidado.',
     descricao:
-      'Cuidado técnico para remover marcas, preservar materiais e devolver à fachada a presença que ela merece.',
+      'Soluções em limpeza de ACM e painéis de LED, com uma avaliação adequada para cada superfície.',
     botaoPrincipal: 'Solicitar avaliação',
     botaoSecundario: 'Conhecer serviços',
   },

@@ -7,46 +7,31 @@ export function Abertura() {
 
   return (
     <section className="abertura" id="inicio">
-      <div className="abertura-foto" aria-hidden="true">
-        <img src="/imagens/fachada-acm.jpeg" alt="" />
-        <div className="abertura-varredura">
-          <img src="/imagens/gota-branca.png" alt="" />
-          <span>limpeza técnica</span>
-        </div>
+      <div className="abertura-simbolo" aria-hidden="true">
+        <span />
+        <span />
+        <span />
+        <i />
       </div>
-      <div className="abertura-mascara" />
 
       <div className="container abertura-conteudo">
-        <div className="abertura-texto">
-          <p className="abertura-selo"><span />{abertura.selo}</p>
-          <h1>
-            <span>{abertura.titulo}</span>
-            <strong>{abertura.destaque}</strong>
-          </h1>
-          <p className="abertura-descricao">{abertura.descricao}</p>
-          <div className="abertura-acoes">
-            <a className="botao botao-primario" href={criarLinkWhatsapp()} target="_blank" rel="noreferrer">
-              <IconeWhatsapp /> {abertura.botaoPrincipal}
-            </a>
-            <a className="abertura-link" href="#servicos">{abertura.botaoSecundario}</a>
-          </div>
+        <p className="abertura-selo"><span />{abertura.selo}<span /></p>
+        <h1>
+          <span>{abertura.titulo}</span>
+          <strong>{abertura.destaque}</strong>
+        </h1>
+        <p className="abertura-descricao">{abertura.descricao}</p>
+
+        <div className="abertura-acoes">
+          <a className="botao botao-primario" href={criarLinkWhatsapp()} target="_blank" rel="noreferrer">
+            <IconeWhatsapp /> {abertura.botaoPrincipal}
+          </a>
+          <a className="abertura-link" href="#servicos">{abertura.botaoSecundario}</a>
         </div>
 
-        <aside className="painel-diagnostico" aria-label="Diagnóstico da superfície">
-          <div className="painel-topo"><span /> Leitura da superfície</div>
-          <div className="painel-item"><small>Material</small><strong>ACM / LED</strong></div>
-          <div className="painel-item"><small>Ação</small><strong>Cuidado específico</strong></div>
-          <div className="painel-status"><i /> Avaliação antes da execução</div>
-        </aside>
-      </div>
-
-      <div className="abertura-servicos">
-        <div className="container abertura-servicos-grade">
+        <div className="abertura-especialidades" aria-label="Especialidades">
           {configuracaoDoSite.servicos.itens.map((servico) => (
-            <a key={servico.titulo} href="#servicos">
-              <span>{servico.icone === 'fachada' ? 'ACM' : servico.icone === 'painel' ? 'LED' : 'PREV'}</span>
-              <div><strong>{servico.titulo}</strong><small>{servico.texto.split('.')[0]}.</small></div>
-            </a>
+            <span key={servico.titulo}>{servico.titulo}</span>
           ))}
         </div>
       </div>
