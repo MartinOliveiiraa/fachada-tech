@@ -1,0 +1,20 @@
+.alternador-tema,
+.botao-menu {
+  display: grid;
+  width: 42px;
+  height: 42px;
+  place-items: center;
+  border: 1px solid var(--linha);
+  border-radius: 50%;
+  background: var(--superficie);
+  color: var(--texto);
+  cursor: pointer;
+  transition: border-color var(--transicao), color var(--transicao), transform var(--transicao);
+}
+
+.alternador-tema:hover,
+.botao-menu:hover {
+  border-color: var(--ciano);
+  color: var(--azul);
+  transform: translateY(-2px);
+}

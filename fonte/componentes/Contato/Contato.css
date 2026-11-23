@@ -1,0 +1,68 @@
+.contato {
+  position: relative;
+  overflow: hidden;
+  border-top: 1px solid var(--linha);
+  background: var(--superficie);
+}
+
+.contato::after {
+  position: absolute;
+  right: -40px;
+  bottom: -35px;
+  color: color-mix(in srgb, var(--azul) 5%, transparent);
+  content: 'FACHADA TECH';
+  font-family: 'Montserrat', sans-serif;
+  font-size: clamp(4rem, 11vw, 10rem);
+  font-weight: 700;
+  letter-spacing: -0.06em;
+  white-space: nowrap;
+}
+
+.contato-caixa {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  min-height: 470px;
+  align-items: center;
+  padding-top: clamp(76px, 9vw, 126px);
+  padding-bottom: clamp(76px, 9vw, 126px);
+  grid-template-columns: minmax(0, 1.25fr) minmax(280px, 0.55fr);
+  gap: clamp(50px, 9vw, 130px);
+}
+
+.contato-texto {
+  padding-left: 30px;
+  border-left: 4px solid var(--ciano);
+}
+
+.contato-texto h2 {
+  max-width: 790px;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: clamp(2.6rem, 5.2vw, 5rem);
+  letter-spacing: -0.06em;
+  line-height: 1.02;
+}
+
+.contato-texto > p:last-child { max-width: 570px; margin: 20px 0 0; color: var(--texto-suave); font-size: 1.04rem; }
+
+.contato-acoes { display: grid; gap: 18px; }
+.contato-whatsapp { background: var(--azul-profundo); color: #ffffff; }
+[data-tema='escuro'] .contato-whatsapp { background: var(--ciano); color: #002c43; }
+
+.contato-instagram {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--linha);
+  color: var(--azul);
+  font-weight: 600;
+}
+
+@media (max-width: 760px) {
+  .contato-caixa { min-height: 0; grid-template-columns: 1fr; gap: 44px; }
+  .contato-texto { padding-left: 20px; }
+  .contato-acoes { justify-items: stretch; }
+}

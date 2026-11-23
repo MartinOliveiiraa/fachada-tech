@@ -1,0 +1,33 @@
+.fachada-animada {
+  position: absolute;
+  z-index: 3;
+  top: 26px;
+  right: 26px;
+  display: flex;
+  height: 82px;
+  align-items: flex-end;
+  gap: 8px;
+  animation: flutuar 5s ease-in-out infinite;
+}
+
+.fachada-animada span {
+  width: 12px;
+  border: 2px solid rgba(255, 255, 255, 0.82);
+  border-bottom: 0;
+  border-radius: 5px 5px 0 0;
+}
+
+.fachada-animada span:nth-child(1) { height: 35%; }
+.fachada-animada span:nth-child(2) { height: 66%; }
+.fachada-animada span:nth-child(3) { height: 100%; }
+
+.fachada-animada i {
+  position: absolute;
+  right: -6px;
+  bottom: -7px;
+  left: -8px;
+  height: 22px;
+  border-top: 2px solid var(--ciano);
+  border-radius: 55% 45% 0 0;
+  transform: rotate(-8deg);
+}
