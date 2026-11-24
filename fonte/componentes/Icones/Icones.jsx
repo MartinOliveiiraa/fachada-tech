@@ -18,6 +18,6 @@ export const IconeWhatsapp = ({ tamanho = 22, ...props }) => (
 export const IconeInstagram = (props) => <Svg {...props}><rect x="3" y="3" width="18" height="18" rx="5" /><circle cx="12" cy="12" r="4" /><path d="M17.5 6.5h.01" /></Svg>
 export const IconeFachada = (props) => <Svg {...props}><path d="M4 20V9l5-3v14M9 20V5l5-3v18M14 20V8l6-3v15M2 20h20" /></Svg>
 export const IconePainel = (props) => <Svg {...props}><rect x="3" y="4" width="18" height="14" rx="2" /><path d="M7 8h.01M11 8h.01M15 8h.01M7 12h.01M11 12h.01M15 12h.01M9 22h6M12 18v4" /></Svg>
-export const IconeAvaliacao = (props) => <Svg {...props}><circle cx="11" cy="11" r="7" /><path d="m16 16 5 5M8.5 11l1.6 1.6 3.4-3.5" /></Svg>
-export const IconeConversa = (props) => <Svg {...props}><path d="M21 12a8 8 0 0 1-8 8H6l-4 2 1.5-4A9 9 0 1 1 21 12Z" /><path d="M8 12h.01M12 12h.01M16 12h.01" /></Svg>
-export const IconeCuidado = (props) => <Svg {...props}><path d="M12 21s8-4.5 8-11V5l-8-3-8 3v5c0 6.5 8 11 8 11Z" /><path d="m9 11 2 2 4-4" /></Svg>
+export const IconeAvaliacao = (props) => <Svg {...props}><path d="M3 18V8l4-2.5V18M7 18V5l5-3v9.5M2 18h9" /><circle cx="16.5" cy="15.5" r="4" /><path d="m19.5 18.5 2.5 2.5M15 15.5l1 1 2-2" /></Svg>
+export const IconeConversa = (props) => <Svg {...props}><path d="M5.5 17.5 3 21l4.6-1.5A9.2 9.2 0 0 0 12 20c5 0 9-3.8 9-8.5S17 3 12 3s-9 3.8-9 8.5c0 2.3 1 4.4 2.5 6Z" /><path d="M8 9.5h8M8 13h5.5" /></Svg>
+export const IconeCuidado = (props) => <Svg {...props}><path d="M8 4h8M9 2h6v4H9z" /><path d="M7 4H5.8A1.8 1.8 0 0 0 4 5.8v14.4A1.8 1.8 0 0 0 5.8 22h12.4a1.8 1.8 0 0 0 1.8-1.8V5.8A1.8 1.8 0 0 0 18.2 4H17" /><path d="m8 14 2.5 2.5L16 11" /></Svg>

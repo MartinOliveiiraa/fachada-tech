@@ -8,8 +8,7 @@ function Marca() {
   return (
     <a className="marca" href="#inicio" aria-label="Fachada Tech - início">
       <span className="marca-icone" aria-hidden="true">
-        <img className="marca-clara" src="/imagens/gota-preta.png" alt="" />
-        <img className="marca-escura" src="/imagens/gota-branca.png" alt="" />
+        <img className="marca-escura" src="/imagens/gota-marca-branca-v2.png" alt="" />
       </span>
       <span className="marca-texto">
         <strong>{configuracaoDoSite.empresa.nome}</strong>
@@ -36,7 +35,7 @@ export function Cabecalho() {
       <div className="container cabecalho-conteudo">
         <Marca />
 
-        <nav className={`navegacao ${menuAberto ? 'navegacao-aberta' : ''}`} aria-label="Navegação principal">
+        <nav id="menu-principal" className={`navegacao ${menuAberto ? 'navegacao-aberta' : ''}`} aria-label="Navegação principal">
           {configuracaoDoSite.navegacao.map((item) => (
             <a key={item.destino} href={item.destino} onClick={fecharMenu}>{item.rotulo}</a>
           ))}
