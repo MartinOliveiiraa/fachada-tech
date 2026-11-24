@@ -7,5 +7,12 @@ export default defineConfig({
   build: {
     outDir: 'dist',
     sourcemap: false,
+    rollupOptions: {
+      output: {
+        entryFileNames: 'assets/[name]-[hash]-production.js',
+        chunkFileNames: 'assets/[name]-[hash]-production.js',
+        assetFileNames: 'assets/[name]-[hash]-production[extname]',
+      },
+    },
   },
 })
