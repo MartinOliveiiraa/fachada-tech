@@ -6,6 +6,6 @@ export default defineConfig({
   publicDir: 'publico',
   build: {
     outDir: 'dist',
-    sourcemap: true,
+    sourcemap: false,
   },
 })
